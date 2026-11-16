@@ -1,0 +1,154 @@
+/* ===== BUDGET TRACKER - WEEK 3 VISUAL DESIGN ===== */
+:root {
+  --theme: #D231A0;
+  --theme-dark: #9E1E76;
+  --dark: #2B1A22;
+  --cream: #FFF8F2;
+  --white: #FFFFFF;
+  --light-grey: #F2E9E4;
+  --gold: #C68B2E;
+  --border: #E5D5D0;
+  --red: #C62828;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--dark);
+  background-color: var(--cream);
+  padding: 20px;
+}
+
+/* HEADINGS */
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: var(--theme);
+  line-height: 1.2;
+}
+h1 { font-size: 2.5rem; margin-bottom: 10px; }
+h2 { font-size: 1.6rem; margin-bottom: 16px; }
+
+/* ===== 1. PAGE HEADING AS A CARD ===== */
+header {
+  background-color: var(--theme);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 auto 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  border-bottom: 6px solid var(--gold);
+}
+header h1 { color: var(--white); }
+header p { font-size: 1.05rem; }
+
+/* ===== MAIN + CARDS (BOX MODEL) ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--white);
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* ===== 2. FORM STYLING ===== */
+label {
+  display: block;
+  font-weight: 600;
+  margin: 16px 0 6px 0;
+  font-size: 0.95rem;
+}
+label:first-child { margin-top: 0; }
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #FFFDFB;
+  color: var(--dark);
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--theme);
+  border-color: var(--theme);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background-color: var(--theme);
+  color: var(--white);
+  border: 2px solid var(--theme);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: var(--theme-dark);
+  border-color: var(--theme-dark);
+}
+
+.delete-btn {
+  background-color: var(--red);
+  border-color: var(--red);
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* ===== 3. TABLE STYLING ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  text-align: left;
+  padding: 14px 12px;
+  border: 1px solid var(--border);
+  font-size: 0.98rem;
+}
+th {
+  background-color: var(--theme);
+  color: var(--white);
+  font-family: 'Merriweather', serif;
+}
+tbody tr:nth-child(even) { background-color: var(--light-grey); }
+tbody tr:hover { background-color: #FCE8F4; }
+
+.total {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--theme);
+  text-align: right;
+  margin-top: 15px;
+  padding: 15px;
+  background: var(--light-grey);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--dark);
+}
