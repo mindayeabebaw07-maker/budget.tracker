@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Budget Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Budget Tracker</h1>
+    <p>Track your daily expenses, stay in control of your money.</p>
+  </header>
+
+  <main>
+    <!-- ADD EXPENSE FORM CARD -->
+    <section class="card">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <label for="description">Description</label>
+        <input type="text" id="description" placeholder="e.g. Groceries, Transport" required>
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">-- Select Category --</option>
+          <option>Food</option>
+          <option>Transport</option>
+          <option>Rent</option>
+          <option>Entertainment</option>
+          <option>Health</option>
+          <option>Other</option>
+        </select>
+
+        <label for="amount">Amount (KES)</label>
+        <input type="number" id="amount" placeholder="e.g. 500" min="1" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- EXPENSE TABLE CARD -->
+    <section class="card">
+      <h2>Expense Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount (KES)</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Groceries</td>
+            <td>Food</td>
+            <td>1,200</td>
+            <td>2026-11-15</td>
+            <td><button class="delete-btn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Matatu Fare</td>
+            <td>Transport</td>
+            <td>200</td>
+            <td>2026-11-16</td>
+            <td><button class="delete-btn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Movie Night</td>
+            <td>Entertainment</td>
+            <td>800</td>
+            <td>2026-11-16</td>
+            <td><button class="delete-btn">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="total">Total Expenses: KES 2,200</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Budget Tracker | Eldoret, Kenya</p>
+  </footer>
+
+</body>
+</html>
