@@ -1,4 +1,4 @@
-# My Budget Tracker - PLP Web Development
+ # My Budget Tracker - PLP Web Development
 
 A simple web app to track daily expenses by description, category, amount, and date. Users can add expenses, view them in a table, and see the total.
 
